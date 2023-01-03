@@ -1,0 +1,15 @@
+app:
+  name: 'kafka_to_redis_loader'
+  version: '1.0.0'
+
+kafka:
+  host: 'localhost'
+  port: '9092'
+  topic: 'profiles'
+  offset: 0
+
+redis:
+  host: '172.17.0.2'
+  port: '5432'
+  password: ''
+
