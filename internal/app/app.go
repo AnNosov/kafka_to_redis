@@ -13,4 +13,6 @@ func Run(cfg *config.Config) {
 	uc := usecase.New(*usecase.NewKafkaReader(kcl), *usecase.NewRedisClient(rcl))
 
 	uc.TransportData()
+
+	uc.RedisProfile.RedisClient.Close()
 }
